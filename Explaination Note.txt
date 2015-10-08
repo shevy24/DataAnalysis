@@ -1,0 +1,31 @@
+Task 1
+
+ The first thing I did was to get my necessary tools up running which are oracle SQL developer tool, Oracle Database 11 and IBM SPSS statistics.
+
+ Question A) was solved by connecting on my SQL developer, creating a Table called USER_SALES and importing the datasheet file from my project folder.
+ Then to calculate the Monthly sales by site, I need the sql statement and just 3 columns from the table USER_SALES (site, creation time and sale value).
+ Sql statement is now applied by grouping them and ordering them accordingly. The same method applies to the payment method per month.
+
+
+ 
+
+ Question C) was solved using the Hotels_visits file. SQL statement is also applied here by subtracting the hotel_login_time
+ from the lag hotel_login_time which is the login before, then taking the average from the two logins and ordering them.
+
+
+
+ Question D) was solved from Hotels_visits file where we have new_user_category. Account id was divided by distinct Account id (Account id which appears more than once). 
+After grouping and ordering command, The average number of visit by New and Old users is gotten.
+
+
+Question E) Calculating the correlation we have to use SPSS, this is to compare between trades and sales. After the data was imported from the file user_sales.
+I represented the payment_type by by numbers. on the table I chose Analyse-->correlate-->Byvariate and  trades to sales value were so close positive value. 
+If negative, there is no correlation.
+
+Question F) This was solved by first writing a query for selecting the old_account id and new_account id from user_trades table and grouping them by furni_type.
+ It appears they both have the same Furni-type choice.
+
+
+Task 2) This was solved by creating a table called purchase and gave it like five atrributes. I did the same for new_purchase which hold information about the daily purchases of new users.
+Then a pseudo code is written to trigger new_purchase which means wherever you see purchase it will be replaced with new_purchase with all it's new attributes populate in a new columm.
+Then a command is thrown to display all new_purchases table. The old date was added in the code in order to put the present date of the new_purchase. 
